@@ -87,24 +87,25 @@ export default function Component() {
         </div>
 
         {/* Resume Content */}
-        <div className="mx-auto p-8">
+        <div className="mx-auto p-6">
           <div
             ref={componentRef}
-            className={`mx-auto bg-background p-16 border-2 border-gray-200 dark:border-gray-800 rounded-xl shadow-lg print:border-0 print:shadow-none ${
+            className={`mx-auto bg-background p-14 border-2 border-gray-200 dark:border-gray-800 rounded-xl shadow-lg print:border-0 print:shadow-none ${
               paperSize === "letter"
                 ? "h-[279.4mm] w-[215.9mm]"
                 : "h-[297mm] w-[210mm]"
             }`}
           >
             {/* Header */}
-            <header className="mb-8">
-              <h1 className="mb-2 text-4xl font-semibold tracking-tight">
+            <header className="mb-6">
+              <h1 className="mb-2 text-3xl font-semibold tracking-tight">
                 Jason Chang
               </h1>
               <p className="max-w-[450px] text-sm font-medium mb-1">
-                I'm a design engineer. I craft human interfaces that conform necessary function into intuitive form.
+                I'm a product designer. I craft human interfaces that conform
+                necessary function into intuitive form.
               </p>
-              <div className="mb-4 text-sm flex items-center gap-2">
+              <div className="mb-3 text-sm flex items-center gap-2">
                 <a href="https://jchang.cc" className="underline">
                   jchang.cc
                 </a>{" "}
@@ -128,7 +129,7 @@ export default function Component() {
               </div> */}
             </header>
 
-            <div className="mb-8 border-b border-gray-300 dark:border-gray-800" />
+            <div className="mb-6 border-b border-gray-300 dark:border-gray-800" />
             {/* 
             <div className="space-y-8 mb-8">
               <section>
@@ -145,10 +146,10 @@ export default function Component() {
               </section>
             </div> */}
 
-            <div className="grid grid-cols-[1fr_1fr] gap-16 mb-4">
+            <div className="grid grid-cols-[1fr_1fr] gap-10 mb-3">
               <section>
-                <div className="mb-8">
-                  <h2 className="mb-4 text-base font-semibold">Education</h2>
+                <div className="mb-5">
+                  <h2 className="mb-3 text-sm font-semibold">Education</h2>
                   <div>
                     <h3 className="text-sm font-semibold">
                       Carnegie Mellon University{" "}
@@ -159,15 +160,24 @@ export default function Component() {
                     <p className="text-sm">B.S. in Information Systems</p>
                   </div>
                 </div>
-                <h2 className="mb-4 text-base font-semibold">Experience</h2>
+                <h2 className="mb-3 text-sm font-semibold">Experience</h2>
 
-                <div className="space-y-5">
+                <div className="space-y-4">
+                  <Experience
+                    title="Product Designer at Hedra"
+                    period="2025 - Present"
+                    bullets={[
+                      "Prototyped, designed, and shipped new features and flows, including major UX redesigns.",
+                      "Collaborated closely with engineers, cross-functional teams, and leadership on agentic experiences and video timelines."
+                    ]}
+                  />
+
                   <Experience
                     title="Design Engineer at Gumroad (Antiwork)"
-                    period="2024 – Present"
+                    period="2024 – 2025"
                     bullets={[
-                      "Working with Sahil, the CEO, to ship features for 3 of Antiwork's products, Gumroad, Flexile, and Helper.",
-                      "Building designs directly in Cursor and shipped to millions of users.",
+                      "Worked with the CEO to ship features for Gumroad, Flexile, and Helper.",
+                      "Built designs directly in code and shipped to millions of users.",
                     ]}
                   />
 
@@ -175,8 +185,8 @@ export default function Component() {
                     title="UI/UX Designer at Procreate"
                     period="2023 – 2025"
                     bullets={[
-                      "Led design for all aspects of user experience for Procreate's digital platforms, used by millions worldwide.",
-                      "Advised regularly on product design and brand architecture.",
+                      "Led design for all aspects of user experience for Procreate's digital platforms.",
+                      "Advised on product design and brand architecture.",
                     ]}
                   />
 
@@ -184,8 +194,7 @@ export default function Component() {
                     title="Product Designer at La Visual"
                     period="2022 – 2023"
                     bullets={[
-                      "Designed digital products with various clients focusing on brand identity and intuitive user experiences.",
-                      "Notable clients include the NFL and the U.S. Department of Education.",
+                      "Designed digital products with clients, such as the NFL and the U.S. Department of Education, focusing on brand identity and intuitive UX.",
                     ]}
                   />
 
@@ -193,31 +202,47 @@ export default function Component() {
                     title="UI/UX Designer at Huemor"
                     period="2019 – 2022"
                     bullets={[
-                      "Shipped websites for numerous clients ranging across tech, construction, and many other industries.",
+                      "Shipped websites for numerous clients across tech, construction, and many other industries.",
                     ]}
                   />
                 </div>
               </section>
 
-              <div className="space-y-8">
-                <div className="space-y-2">
-                  <h2 className="mb-4 text-md font-semibold">Skills & Tools</h2>
+              <div className="space-y-5">
+                <div className="space-y-1.5">
+                  <h2 className="mb-3 text-sm font-semibold">Skills & Tools</h2>
                   <p className="text-sm">
-                    Cursor, Figma, v0,
-                    <br />
-                    Next, React, Tailwind
+                    Cursor, Figma
                   </p>
                 </div>
                 <section>
-                  <div className="mb-8">
-                    <h2 className="mb-4 text-base font-semibold">Projects</h2>
+                  <div className="mb-5">
+                    <h2 className="mb-3 text-sm font-semibold">Projects</h2>
 
-                    <div className="space-y-5">
+                    <div className="space-y-4">
+                      <Experience
+                        title="Agentic Image & Video Creation"
+                        period="2025"
+                        bullets={[
+                          "Exploring how autonomous AI agents can make the video creation workflow accessible to everyone.",
+                        ]}
+                        variant="paragraph"
+                      />
+
+                      <Experience
+                        title="AI Video Timeline"
+                        period="2025"
+                        bullets={[
+                          "Designed an AI-powered video timeline and accessible editing experience for creators who prefer simplicity over traditional tools.",
+                        ]}
+                        variant="paragraph"
+                      />
+
                       <Experience
                         title="Flexile - Payroll & Equity Platform"
                         period="2025"
                         bullets={[
-                          "Designed and built features for Flexile, a payroll and equity platform. Shipped payment flows and equity management tools."
+                          "Designed and shipped payment flows and equity managementtools for Flexile.",
                         ]}
                         variant="paragraph"
                       />
@@ -226,7 +251,7 @@ export default function Component() {
                         title="Procreate Help Center Redesign"
                         period="2025"
                         bullets={[
-                          "Led redesign of Procreate's Help Center with a new design system and migrated forum discussions from Folio to create a cohesive support experience.",
+                          "Led redesign of Procreate's Help Center with a new design system and unified forum support.",
                         ]}
                         variant="paragraph"
                       />
@@ -239,14 +264,14 @@ export default function Component() {
                         variant="paragraph"
                       /> */}
 
-                      <Experience
+                      {/* <Experience
                         title="Gumroad Marketplace Redesign"
                         period="2024"
                         bullets={[
                           "Designed and shipped a complete redesign of Gumroad's Discover marketplace to increase GMV and improve product discoverability.",
                         ]}
                         variant="paragraph"
-                      />
+                      /> */}
 
                       <Experience
                         title="Open Source Gumroad's Design System"
