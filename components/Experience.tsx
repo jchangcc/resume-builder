@@ -13,7 +13,7 @@ export function Experience({
   return (
     <div>
       <h3 className="text-sm font-semibold">{title}</h3>
-      <p className="text-sm font-medium text-muted-foreground">{period}</p>
+      <p className="text-sm font-medium text-muted-foreground mb-0.5">{period}</p>
       {variant === "bullets" ? (
         <ul className="text-sm list-dash pl-3">
           {bullets.map((bullet, index) => (
