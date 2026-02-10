@@ -149,7 +149,7 @@ export default function Component() {
             <div className="grid grid-cols-[1fr_1fr] gap-10 mb-3">
               <section>
                 <div className="mb-5">
-                  <h2 className="mb-3 text-sm font-semibold">Education</h2>
+                  <h2 className="mb-2 text-base font-semibold">Education</h2>
                   <div>
                     <h3 className="text-sm font-semibold">
                       Carnegie Mellon University{" "}
@@ -160,15 +160,15 @@ export default function Component() {
                     <p className="text-sm">B.S. in Information Systems</p>
                   </div>
                 </div>
-                <h2 className="mb-3 text-sm font-semibold">Experience</h2>
+                <h2 className="mb-2 text-base font-semibold">Experience</h2>
 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <Experience
                     title="Product Designer at Hedra"
                     period="2025 - Present"
                     bullets={[
                       "Prototyped, designed, and shipped new features and flows, including major UX redesigns.",
-                      "Collaborated closely with engineers, cross-functional teams, and leadership on agentic experiences and video timelines."
+                      "Collaborated closely with engineers, cross-functional teams, and leadership on agentic experiences and video timelines.",
                     ]}
                   />
 
@@ -210,21 +210,19 @@ export default function Component() {
 
               <div className="space-y-5">
                 <div className="space-y-1.5">
-                  <h2 className="mb-3 text-sm font-semibold">Skills & Tools</h2>
-                  <p className="text-sm">
-                    Cursor, Figma
-                  </p>
+                  <h2 className="mb-2 text-base font-semibold">Skills & Tools</h2>
+                  <p className="text-sm">Cursor, Figma, Claude Code, v0</p>
                 </div>
                 <section>
                   <div className="mb-5">
-                    <h2 className="mb-3 text-sm font-semibold">Projects</h2>
+                    <h2 className="mb-2 text-base font-semibold">Projects</h2>
 
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                       <Experience
                         title="Agentic Image & Video Creation"
                         period="2025"
                         bullets={[
-                          "Exploring how autonomous AI agents can make the video creation workflow accessible to everyone.",
+                          "Designed a video agent that acts as a creative collaborator: users describe what they want, and the agent helps them refine and assemble it on a timeline until they have a video they can export.",
                         ]}
                         variant="paragraph"
                       />
@@ -242,7 +240,7 @@ export default function Component() {
                         title="Flexile - Payroll & Equity Platform"
                         period="2025"
                         bullets={[
-                          "Designed and shipped payment flows and equity managementtools for Flexile.",
+                          "Designed and shipped payment flows and equity management tools for Flexile.",
                         ]}
                         variant="paragraph"
                       />
