@@ -71,10 +71,10 @@ export const publicExperience: ResumeRole[] = [
  */
 export const permExperience: ResumeRole[] = [
   {
-    title: "Product Designer at Arena Physica",
+    title: "Senior Product Designer at Arena Physica",
     period: "04/27/2026 – Present",
     bullets: [
-      "Product design for Atlas, an EMSI and RF design product, including the metagraph and design system, with engineers.",
+      "Leading design for Atlas, an EMSI/RF system-design tool for RF engineers — from the metagraph canvas and editing workflows to the design system engineers ship against.",
     ],
   },
   {
