@@ -74,7 +74,7 @@ export const permExperience: ResumeRole[] = [
     title: "Senior Product Designer at Arena Physica",
     period: "04/27/2026 – Present",
     bullets: [
-      "Leading design for Atlas, an EMSI/RF system-design tool for RF engineers — from the metagraph canvas and editing workflows to the design system engineers ship against.",
+      "Designing Atlas, Arena's EMSI and RF system design tool, including the metagraph canvas, editing workflows, and the shared design system used across the product.",
     ],
   },
   {
