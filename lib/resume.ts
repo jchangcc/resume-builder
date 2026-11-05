@@ -64,8 +64,10 @@ export const publicExperience: ResumeRole[] = [
  * through the W-2 end (05/31/2025).
  * La Visual end 06/30/2023 is the last day of the soft ~06/2023 window,
  * not a documented separation date. Shown as contract work via Dreamrock.
- * Education in the repo is only "2015 - 2018"; the PERM page uses
- * 08/2015 – 05/2018 as a CMU undergrad calendar assumption, not a transcript date.
+ * Education on /perm is from the CMU Enrollment Verification letter
+ * (University Registrar, June 26, 2023): first enrolled 08/31/2015,
+ * Bachelor of Science in Information Systems with University Honors
+ * conferred 12/19/2018. The public page still shows 2015 - 2018.
  */
 export const permExperience: ResumeRole[] = [
   {

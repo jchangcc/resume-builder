@@ -163,13 +163,21 @@ export function ResumePage({
                   <h2 className="mb-2 text-base font-semibold">Education</h2>
                   <div>
                     <h3 className="text-sm font-semibold">
-                      Carnegie Mellon University{" "}
-                      <span className="font-medium text-muted-foreground">
-                        {variant === "perm"
-                          ? "08/2015 – 05/2018"
-                          : "2015 - 2018"}
-                      </span>
+                      Carnegie Mellon University
+                      {variant === "public" ? (
+                        <>
+                          {" "}
+                          <span className="font-medium text-muted-foreground">
+                            2015 - 2018
+                          </span>
+                        </>
+                      ) : null}
                     </h3>
+                    {variant === "perm" ? (
+                      <p className="text-sm font-medium text-muted-foreground mb-0.5">
+                        08/31/2015 – 12/19/2018
+                      </p>
+                    ) : null}
                     <p className="text-sm">B.S. in Information Systems</p>
                   </div>
                 </div>
