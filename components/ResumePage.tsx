@@ -155,7 +155,9 @@ export function ResumePage({
               </div>
             </header>
 
-            <div className="mb-6 border-b border-gray-300 dark:border-gray-800" />
+            {variant === "public" ? (
+              <div className="mb-6 border-b border-gray-300 dark:border-gray-800" />
+            ) : null}
 
             <div className="grid grid-cols-[1fr_1fr] gap-10 mb-3">
               <section>

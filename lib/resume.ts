@@ -63,7 +63,7 @@ export const publicExperience: ResumeRole[] = [
  * Gumroad is one span from the approximate 1099 start (01/15/2024)
  * through the W-2 end (05/31/2025).
  * La Visual end 06/30/2023 is the last day of the soft ~06/2023 window,
- * not a documented separation date. Shown as contract work via Dreamrock.
+ * not a documented separation date. Shown as contract work.
  * Education on /perm is from the CMU Enrollment Verification letter
  * (University Registrar, June 26, 2023): first enrolled 08/31/2015,
  * Bachelor of Science in Information Systems with University Honors
@@ -73,15 +73,19 @@ export const permExperience: ResumeRole[] = [
   {
     title: "Product Designer at Arena Physica",
     period: "04/27/2026 – Present",
-    bullets: [],
+    bullets: [
+      "Product design for Atlas, an EMSI and RF design product, including the metagraph and design system, with engineers.",
+    ],
   },
   {
     title: "Product Designer at Hedra",
     period: "07/14/2025 – 04/24/2026",
-    bullets: hedraBullets,
+    bullets: [
+      "Designed and shipped features, flows, and UX redesigns for agentic experiences and video timelines.",
+    ],
   },
   {
-    title: "Design Engineer at Gumroad (Antiwork)",
+    title: "Design Engineer at Gumroad",
     period: "01/15/2024 – 05/31/2025",
     bullets: gumroadBullets,
   },
@@ -91,7 +95,7 @@ export const permExperience: ResumeRole[] = [
     bullets: procreateBullets,
   },
   {
-    title: "Product Designer at La Visual (contract via Dreamrock)",
+    title: "Product Designer at La Visual (contract)",
     period: "03/21/2022 – 06/30/2023",
     bullets: laVisualBullets,
   },
