@@ -81,7 +81,7 @@ export const permExperience: ResumeRole[] = [
     title: "Product Designer at Hedra",
     period: "07/14/2025 – 04/24/2026",
     bullets: [
-      "Designed and shipped features, flows, and UX redesigns for agentic experiences and video timelines.",
+      "Designed and shipped new features, flows, and UX for agentic experiences and video timelines.",
     ],
   },
   {
