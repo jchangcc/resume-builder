@@ -60,17 +60,16 @@ export const publicExperience: ResumeRole[] = [
 /**
  * PERM / immigration copy at `/perm`.
  * Dates are mm/dd/yyyy where a day is documented.
- * Soft dates (do not treat as a sworn last day):
- * - Gumroad 1099 starts about 01/15/2024 and runs through March 2025 (no end day).
- * - La Visual ends ~06/2023. 06/30/2023 is the last day of that month, not a documented separation date.
- *   Paid via Dreamrock; no US W-2.
- * Legal names not shown on the public titles: Hedra Inc.; Gumroad Inc.;
- * Procreate / Savage Software Group Pty Ltd; LA Visual, Inc.; Huemor Designs LLC;
- * Arena Technologies / Arena Physica.
+ * Gumroad is one span from the approximate 1099 start (01/15/2024)
+ * through the W-2 end (05/31/2025).
+ * La Visual end 06/30/2023 is the last day of the soft ~06/2023 window,
+ * not a documented separation date. Shown as contract work via Dreamrock.
+ * Education in the repo is only "2015 - 2018"; the PERM page uses
+ * 08/2015 – 05/2018 as a CMU undergrad calendar assumption, not a transcript date.
  */
 export const permExperience: ResumeRole[] = [
   {
-    title: "Product Designer at Arena Technologies / Arena Physica",
+    title: "Product Designer at Arena Physica",
     period: "04/27/2026 – Present",
     bullets: [],
   },
@@ -81,10 +80,7 @@ export const permExperience: ResumeRole[] = [
   },
   {
     title: "Design Engineer at Gumroad (Antiwork)",
-    period: [
-      "04/01/2025 – 05/31/2025 (W-2 via Gusto)",
-      "01/15/2024 – 03/2025 (1099 contractor)",
-    ],
+    period: "01/15/2024 – 05/31/2025",
     bullets: gumroadBullets,
   },
   {
@@ -93,7 +89,7 @@ export const permExperience: ResumeRole[] = [
     bullets: procreateBullets,
   },
   {
-    title: "Product Designer at La Visual",
+    title: "Product Designer at La Visual (contract via Dreamrock)",
     period: "03/21/2022 – 06/30/2023",
     bullets: laVisualBullets,
   },

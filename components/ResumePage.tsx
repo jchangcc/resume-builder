@@ -136,7 +136,7 @@ export function ResumePage({
                 : "h-[297mm] w-[210mm]"
             }`}
           >
-            <header className={variant === "perm" ? "mb-4" : "mb-6"}>
+            <header className="mb-6">
               <h1 className="mb-2 text-3xl font-semibold tracking-tight">
                 Jason Chang
               </h1>
@@ -155,25 +155,19 @@ export function ResumePage({
               </div>
             </header>
 
-            <div
-              className={`${variant === "perm" ? "mb-4" : "mb-6"} border-b border-gray-300 dark:border-gray-800`}
-            />
+            <div className="mb-6 border-b border-gray-300 dark:border-gray-800" />
 
             <div className="grid grid-cols-[1fr_1fr] gap-10 mb-3">
-              <section
-                className={
-                  variant === "perm"
-                    ? "[&_h3]:leading-tight [&_li]:leading-tight [&_p]:leading-tight"
-                    : undefined
-                }
-              >
-                <div className={variant === "perm" ? "mb-3" : "mb-5"}>
+              <section>
+                <div className="mb-5">
                   <h2 className="mb-2 text-base font-semibold">Education</h2>
                   <div>
                     <h3 className="text-sm font-semibold">
                       Carnegie Mellon University{" "}
                       <span className="font-medium text-muted-foreground">
-                        2015 - 2018
+                        {variant === "perm"
+                          ? "08/2015 – 05/2018"
+                          : "2015 - 2018"}
                       </span>
                     </h3>
                     <p className="text-sm">B.S. in Information Systems</p>
@@ -181,13 +175,14 @@ export function ResumePage({
                 </div>
                 <h2 className="mb-2 text-base font-semibold">Experience</h2>
 
-                <div className={variant === "perm" ? "space-y-2" : "space-y-3"}>
+                <div className="space-y-3">
                   {experience.map((role) => (
                     <Experience
                       key={role.title}
                       title={role.title}
                       period={role.period}
                       bullets={role.bullets}
+                      variant={variant === "perm" ? "paragraph" : "bullets"}
                     />
                   ))}
                 </div>
